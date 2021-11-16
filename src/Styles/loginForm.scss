@@ -1,0 +1,106 @@
+
+@import 'Variables.scss';
+.form-container{
+    padding: 40px;
+    background-color: $white;
+    border-radius: 20px;
+    max-width: 450px;
+    color: #282828;
+    width: 100%;
+    justify-content: center;
+
+    h1{
+        color:#282828;
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .subH{
+        color: #999 ;
+    }
+
+    .formGroup{
+        margin: 20px 0;
+
+        label{display: block;font-size: 12px;columns: #555555;margin-bottom: 5px;}
+        input[type="text"]{
+            border-radius: 10px;
+            background-color: $inputBg;
+            width: 100%;height: 43px;
+            border: none;
+            padding-left:45px ;
+            box-sizing: border-box;    
+            background-repeat: no-repeat;
+            background-position: 10px center;    
+            font-family: $mainFont;
+            font-size: 15px;
+            
+            &:focus{outline-color:$inputOutline;}
+        }
+        
+        .form-check-inline {
+            display: inline-block;
+            // margin-right: 1rem;
+            background-color: $inputBg;
+            border-radius: 10px;
+            // width: 50%;
+            padding: 15px;
+            flex-grow: 1;
+            margin: 0 10px;
+        
+            label{display: inline;font-size: 15px;}
+            input{margin-right: 10px;}
+            // input[type="radio"]:checked{
+            //     + label {color: red;}
+            //     @at-root div#{&} {
+            //         background-color: yellow
+            //     }
+
+            // }
+        }
+
+        .gender{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -10px;
+        }
+    }
+    
+
+    .btn{
+        background-color: $submitBtn;
+        padding: 20px 0;
+        border-radius: 20px;
+        text-align: center;
+        color: $white;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        border: none;
+        display: block;
+        width: 100%;
+    }
+}
+
+
+.name{
+    input{background-image: $icoUser;}
+}
+.mail{
+    input{background-image: $icoMail;}
+}
+.react-datepicker__input-container{
+    input{
+        background-image: $icoBirth , $icoCalendar;
+        background-repeat: no-repeat;
+        background-position: 10px center,center right 15px!important;  
+    }
+}
+.was-validated .form-control:invalid {
+    border:solid 1px $inputErr!important;
+}
+
+.was-validated .form-check-input:invalid {
+    border:solid 1px $inputErr!important;
+}
+
+    

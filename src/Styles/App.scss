@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap');
+@import 'Variables.scss';
+@import 'Mixins.scss';
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; 
+    box-sizing: border-box;
+}
+  h1, h2, h3, h4, h5, h6{font-weight: 600;}
+  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block; }
+  
+  body {
+    font-family: $mainFont;
+    font-size: 14px;
+    background: $bodyBgImg  $bodyBgColor no-repeat ;
+    background-position:top center;
+    background-size: 100%;
+    line-height: 1; 
+    @include respond(lg) {
+      background-size: 150%;
+    }
+    @include respond(sm) {
+      background-size: 400%;
+      background-position:top left;
+    }
+
+    
+  
+  }
+  
+  ol, ul {
+    list-style: none; }
+  
+  blockquote, q {
+    quotes: none; }
+  
+  blockquote {
+    &:before, &:after {
+      content: '';
+      content: none; } }
+  
+  q {
+    &:before, &:after {
+      content: '';
+      content: none; } }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+  .justify-content-end {
+    -ms-flex-pack: end!important;
+    justify-content: flex-end!important;}
+  
+  .img-res{width: 100%;}
+  
+.App{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    @include respond(xl) {
+      flex-direction: column;
+      padding-top: 40px;
+      justify-content:flex-start;
+    }
+    .container{
+      display: inherit;
+      width: 50%;
+
+      @include respond(xl) {
+        width: 100%;
+        padding: 20px;
+        justify-content: center;
+      }
+    }
+    .container.left{
+      justify-content: end;
+      @include respond(xl) {
+        justify-content: center;
+        width: 100%;
+      }
+    }
+    .logo{position:absolute;top:20px;left: 30px;width: 120px;}
+    .banner{
+        flex-direction: column;
+        align-items: center;
+        color: $white;
+        max-width: 545px;
+        padding: 40px;
+
+        @include respond(xl) {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          max-width: unset;
+        }
+        @include respond(sm) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 20px;
+        }
+      
+
+      h1{
+        font-size: 40px;
+        line-height: 45px;
+        margin-bottom: 15px;
+        @include respond(sm) {
+          font-size: 32px;
+        }
+      }
+      p{
+        line-height: 21px;
+        margin-bottom: 20px;
+      }
+      figure{
+        width: 60%;
+        margin-left: 10%;
+        @include respond(xl) {
+          width: 30%;
+          margin-left: 0;}
+        @include respond(sm) {
+          width: 80%;
+        }
+      }
+    }
+}
+

@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  font-family: "Kanit", sans-serif;
+  font-size: 14px;
+  background: url("../body_bg.svg") #F0F3F7 no-repeat;
+  background-position: top center;
+  background-size: 100%;
+  line-height: 1;
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    background-size: 150%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  body {
+    background-size: 400%;
+    background-position: top left;
+  }
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.justify-content-end {
+  -ms-flex-pack: end !important;
+  -webkit-box-pack: end !important;
+          justify-content: flex-end !important;
+}
+
+.img-res {
+  width: 100%;
+}
+
+.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+@media only screen and (max-width: 1199.99px) {
+  .App {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 40px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.App .container {
+  display: inherit;
+  width: 50%;
+}
+
+@media only screen and (max-width: 1199.99px) {
+  .App .container {
+    width: 100%;
+    padding: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.App .container.left {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+@media only screen and (max-width: 1199.99px) {
+  .App .container.left {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+}
+
+.App .logo {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  width: 120px;
+}
+
+.App .banner {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  max-width: 545px;
+  padding: 40px;
+}
+
+@media only screen and (max-width: 1199.99px) {
+  .App .banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    max-width: unset;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .App .banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px;
+  }
+}
+
+.App .banner h1 {
+  font-size: 40px;
+  line-height: 45px;
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 576px) {
+  .App .banner h1 {
+    font-size: 32px;
+  }
+}
+
+.App .banner p {
+  line-height: 21px;
+  margin-bottom: 20px;
+}
+
+.App .banner figure {
+  width: 60%;
+  margin-left: 10%;
+}
+
+@media only screen and (max-width: 1199.99px) {
+  .App .banner figure {
+    width: 30%;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .App .banner figure {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=App.css.map */
